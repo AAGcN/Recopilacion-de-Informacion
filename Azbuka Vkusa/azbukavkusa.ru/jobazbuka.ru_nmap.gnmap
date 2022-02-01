@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Tue Feb  1 07:27:10 2022 as: nmap -sV -sC -A -Pn -O -oA jobazbuka.ru_nmap jobazbuka.ru
+Host: 93.93.88.211 (cdn.ngenix.net)	Status: Up
+Host: 93.93.88.211 (cdn.ngenix.net)	Ports: 53/closed/tcp//domain///, 80/open/tcp//http//nginx/, 443/open/tcp//ssl|http//nginx/, 554/closed/tcp//rtsp///, 1935/closed/tcp//rtmp///, 4224/closed/tcp//xtell///, 4242/closed/tcp//vrml-multi-use///, 4279/closed/tcp//vrml-multi-use///, 7200/closed/tcp//fodms///, 7201/closed/tcp//dlip///	Ignored State: filtered (990)	Seq Index: 257	IP ID Seq: All zeros
+# Nmap done at Tue Feb  1 07:27:43 2022 -- 1 IP address (1 host up) scanned in 33.56 seconds

@@ -1,0 +1,2 @@
+[2022-02-01 07:30:08] [nameserver-fingerprint] [dns] [info] jobazbuka.ru [ns2.ngenix-dns.net.,ns1.ngenix-dns.net.]
+[2022-02-01 07:30:20] [txt-fingerprint] [dns] [info] jobazbuka.ru ["_globalsign-domain-verification=rIMf8EajmDg1dS4iBUCItzwWLPoPoLWdZmxdEmOWcL","v=spf1 a mx include:_spf.atlassian.net include:_spf.google.com include:spf.sendsay.ru -all"]

@@ -1,0 +1,6 @@
+[2022-01-31 07:41:11] [mx-fingerprint] [dns] [info] azbukavkusa.ru [5 cluster8.eu.messagelabs.com.,50 mail1.azbukavkusa.ru.,60 mail2.azbukavkusa.ru.,6 cluster8a.eu.messagelabs.com.]
+[2022-01-31 07:41:47] [cname-fingerprint] [dns] [info] cavist.azbukavkusa.ru [ghs.googlehosted.com.]
+[2022-01-31 07:41:52] [txt-fingerprint] [dns] [info] owa.azbukavkusa.ru ["google-site-verification=no2pFzBin6h2htEx-ZRG6bLed78jqKSfTF1JFcH1lG4"]
+[2022-01-31 07:41:52] [txt-fingerprint] [dns] [info] azbukavkusa.ru ["atlassian-domain-verification=XjwDz92MEm5k4jB2RIzKd8rgYyu/zgqpDDDlpZuoKT84RFnoTrr1uYPmcoN4XpUe","SAEmmcK2D9j0OWY8F485x2o0MVjbFIzOq5CpA/aAy3R/1iYf5z+tji3qP8c2oW1HcGiQU3eBW7reymPUjQvgCA==","h1-domain-verification=bFU8pJdZ1KQXR5tZZ6FRDX7DK5sttfYwt8b5PWYEzigPbzbw","ngenix-verification=8028661802757fa57e014cbc93cd97c6","google-site-verification=lMft1V3FhhPCpgAbMJxaaz13Mzy1xZitEoa2FxgmIKw","B87Kl5W","v=spf1 a mx include:_spf.atlassian.net include:_spf.google.com include:spf.sendsay.ru -all","MS=ms41555120"]
+[2022-01-31 07:41:52] [txt-fingerprint] [dns] [info] www.azbukavkusa.ru ["ngenix-verification=8028661802757fa57e014cbc93cd97c6"]
+[2022-01-31 07:48:04] [nameserver-fingerprint] [dns] [info] azbukavkusa.ru [ns2.ngenix-dns.net.,ns1.ngenix-dns.net.]

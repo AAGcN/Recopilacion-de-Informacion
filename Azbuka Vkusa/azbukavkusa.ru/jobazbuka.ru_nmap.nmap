@@ -1,0 +1,54 @@
+# Nmap 7.92 scan initiated Tue Feb  1 07:27:10 2022 as: nmap -sV -sC -A -Pn -O -oA jobazbuka.ru_nmap jobazbuka.ru
+Nmap scan report for jobazbuka.ru (93.93.88.211)
+Host is up (0.076s latency).
+Other addresses for jobazbuka.ru (not scanned): 212.193.152.215 46.235.184.134 37.220.162.33
+rDNS record for 93.93.88.211: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   10.58 ms 192.168.1.1
+2   ...
+3   12.64 ms 29.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.29)
+4   12.65 ms 158.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.158)
+5   ... 6
+7   8.77 ms  be1-400-grtmadte2.net.telefonicaglobalsolutions.com (216.184.113.184)
+8   12.65 ms 94.142.107.207
+9   62.91 ms prs-bb2-link.ip.twelve99.net (80.91.248.130)
+10  66.85 ms ffm-bb1-link.ip.twelve99.net (62.115.123.12)
+11  73.97 ms pe02.8marta.Moscow.gldn.net (79.104.225.141)
+12  66.64 ms s-b5-link.ip.twelve99.net (62.115.133.25)
+13  61.50 ms vimpelcom-svc072000-ic358960.ip.twelve99-cust.net (62.115.44.73)
+14  73.91 ms pe02.8marta.Moscow.gldn.net (79.104.225.141)
+15  83.70 ms sw1-msk-sov.ip.ngenix.net (93.93.91.1)
+16  72.93 ms cdn.ngenix.net (93.93.88.211)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb  1 07:27:43 2022 -- 1 IP address (1 host up) scanned in 33.56 seconds

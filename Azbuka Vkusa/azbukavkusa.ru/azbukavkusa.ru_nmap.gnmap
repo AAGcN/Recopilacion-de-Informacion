@@ -1,0 +1,18 @@
+# Nmap 7.92 scan initiated Sat Jan 29 21:31:50 2022 as: nmap -sV -sC -A -Pn -O -iL azbukavkusa.ru_list.txt -oA azbukavkusa.ru_nmap
+Host: 212.193.157.110 (cdn.ngenix.net)	Status: Up
+Host: 212.193.157.110 (cdn.ngenix.net)	Ports: 53/closed/tcp//domain///, 80/open/tcp//http//nginx/, 443/open/tcp//ssl|http//nginx/, 554/closed/tcp//rtsp///, 1935/closed/tcp//rtmp///, 4224/closed/tcp//xtell///, 4242/closed/tcp//vrml-multi-use///, 4279/closed/tcp//vrml-multi-use///, 7200/closed/tcp//fodms///, 7201/closed/tcp//dlip///	Ignored State: filtered (990)	Seq Index: 257	IP ID Seq: All zeros
+Host: 142.250.185.19 (mad41s11-in-f19.1e100.net)	Status: Up
+Host: 142.250.185.19 (mad41s11-in-f19.1e100.net)	Ports: 80/open/tcp//http//Google httpd/, 443/open/tcp//ssl|http//Google httpd/	Ignored State: filtered (998)	Seq Index: 261	IP ID Seq: Randomized
+Host: 195.19.210.43 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.43 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 8.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 8.5/	Ignored State: filtered (998)	Seq Index: 261	IP ID Seq: Incremental
+Host: 195.19.210.44 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.44 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 8.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 8.5/	Ignored State: filtered (998)	Seq Index: 259	IP ID Seq: Incremental
+Host: 195.19.210.64 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.64 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 7.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 7.5/, 465/open/tcp//smtp//Microsoft Exchange smtpd/, 587/open/tcp//smtp//Microsoft Exchange smtpd/, 993/open/tcp//ssl|imap//Microsoft Exchange 2007-2010 imapd/, 995/open/tcp//ssl|pop3//Microsoft Exchange 2007-2010 pop3d/	Ignored State: filtered (994)
+Host: 195.19.210.14 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.14 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 7.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 7.5/, 465/open/tcp//smtp//Microsoft Exchange smtpd/, 993/open/tcp//ssl|imap//Microsoft Exchange 2007-2010 imapd/	Ignored State: filtered (996)	Seq Index: 247	IP ID Seq: All zeros
+Host: 195.19.210.14 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.14 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 7.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 7.5/, 587/open/tcp//smtp//Microsoft Exchange smtpd/, 993/open/tcp//ssl|imap//Microsoft Exchange 2007-2010 imapd/, 995/open/tcp//ssl|pop3//Microsoft Exchange 2007-2010 pop3d/	Ignored State: filtered (995)	Seq Index: 261	IP ID Seq: All zeros
+Host: 195.19.210.43 (unspecified.av.ru)	Status: Up
+Host: 195.19.210.43 (unspecified.av.ru)	Ports: 80/open/tcp//http//Microsoft IIS httpd 8.5/, 443/open/tcp//ssl|http//Microsoft IIS httpd 8.5/	Ignored State: filtered (998)	Seq Index: 261	IP ID Seq: Incremental
+# Nmap done at Sat Jan 29 21:49:59 2022 -- 8 IP addresses (8 hosts up) scanned in 1089.41 seconds

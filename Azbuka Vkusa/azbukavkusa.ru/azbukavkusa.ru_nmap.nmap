@@ -1,0 +1,525 @@
+# Nmap 7.92 scan initiated Sat Jan 29 21:31:50 2022 as: nmap -sV -sC -A -Pn -O -iL azbukavkusa.ru_list.txt -oA azbukavkusa.ru_nmap
+Nmap scan report for azbukavkusa.ru (212.193.157.110)
+Host is up (0.080s latency).
+Other addresses for azbukavkusa.ru (not scanned): 46.235.189.110 46.235.184.188 46.235.185.176 37.220.163.2 93.93.89.20
+rDNS record for 212.193.157.110: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-6 are the same as for 195.19.210.43
+7   8.06 ms  176.52.248.172
+8   8.54 ms  4.68.39.69
+9   16.06 ms 176.52.248.247
+10  33.35 ms 195.122.183.218
+11  72.05 ms 185.140.151.249
+12  ...
+13  37.92 ms ae45-pcr1.prp.cw.net (195.2.8.54)
+14  50.37 ms ae1-pcr1.fnt.cw.net (195.2.9.125)
+15  32.82 ms 217.161.68.34
+16  72.93 ms 185.140.151.249
+17  78.27 ms cdn.ngenix.net (212.193.157.110)
+
+Nmap scan report for cavist.azbukavkusa.ru (142.250.185.19)
+Host is up (0.0086s latency).
+Other addresses for cavist.azbukavkusa.ru (not scanned): 2a00:1450:4003:803::2013
+rDNS record for 142.250.185.19: mad41s11-in-f19.1e100.net
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Google httpd
+| http-server-header: 
+|   ESF
+|_  ghs
+|_http-title: Did not follow redirect to https://cavist.azbukavkusa.ru/
+443/tcp open  ssl/http Google httpd
+| ssl-cert: Subject: commonName=cavist.azbukavkusa.ru
+| Subject Alternative Name: DNS:cavist.azbukavkusa.ru
+| Not valid before: 2022-01-24T10:05:31
+|_Not valid after:  2022-04-24T10:05:30
+| http-server-header: 
+|   ESF
+|_  ghs
+|_http-title: \xD0\x9A\xD0\xB0\xD0\xB2\xD0\xB8\xD1\x81\xD1\x82: \xD0\xBA\xD1\x82\xD0\xBE \xD1\x8D\xD1\x82\xD0\xBE \xD0\xB8 \xD0\xBA\xD0\xB0\xD0\xBA \xD0\xB8\xD0\xBC \xD1\x81\xD1\x82\xD0\xB0\xD1\x82\xD1\x8C 
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|bridge
+Running (JUST GUESSING): OpenBSD 4.X (89%), Digi embedded (85%), FreeBSD 9.X (85%)
+OS CPE: cpe:/o:openbsd:openbsd:4.3 cpe:/o:freebsd:freebsd:9.1
+Aggressive OS guesses: OpenBSD 4.3 (89%), Digi PortServer TS serial-to-Ethernet bridge (85%), FreeBSD 9.1-PRERELEASE (85%), OpenBSD 4.0 (x86) (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 10 hops
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 195.19.210.43
+2   ...
+3   6.62 ms  29.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.29)
+4   ...
+5   8.08 ms  17.red-81-46-0.customer.static.ccgg.telefonica.net (81.46.0.17)
+6   9.41 ms  176.52.253.97
+7   8.06 ms  5.53.0.176
+8   8.54 ms  172.253.50.51
+9   11.22 ms 142.251.49.55
+10  10.30 ms mad41s11-in-f19.1e100.net (142.250.185.19)
+
+Nmap scan report for pool01.azbukavkusa.ru (195.19.210.43)
+Host is up (0.084s latency).
+rDNS record for 195.19.210.43: unspecified.av.ru
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp open  ssl/http Microsoft IIS httpd 8.5
+|_ssl-date: 2022-01-30T02:47:33+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sip.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:sip.azbukavkusa.ru, DNS:pool01.azbukavkusa.ru, DNS:pool02.azbukavkusa.ru, DNS:wc.azbukavkusa.ru, DNS:meet.azbukavkusa.ru, DNS:join.azbukavkusa.ru, DNS:lyncdiscover.azbukavkusa.ru, DNS:lyncdiscoverinternal.azbukavkusa.ru, DNS:sip.sip.azbukavkusa.ru, DNS:lyncdiscover.sip.azbukavkusa.ru, DNS:lyncdiscoverinternal.sip.azbukavkusa.ru, DNS:www.sip.azbukavkusa.ru
+| Not valid before: 2021-02-12T09:56:02
+|_Not valid after:  2022-03-16T09:56:02
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: 403 - Forbidden: Access is denied.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows 7 SP1 (92%), Microsoft Windows Server 2012 (89%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (89%), Microsoft Windows Server 2012 R2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   2.68 ms  192.168.1.1
+2   ...
+3   7.22 ms  33.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.33)
+4   ...
+5   8.08 ms  69.red-80-58-96.staticip.rima-tde.net (80.58.96.69)
+6   7.42 ms  213.140.51.56
+7   16.93 ms 176.52.248.190
+8   14.70 ms orange-be1-grtbcnes1.net.telefonicaglobalsolutions.com (213.140.53.73)
+9   19.05 ms 193.251.133.168
+10  46.36 ms 193.251.132.230
+11  52.14 ms 193.251.129.96
+12  46.36 ms vimpelcom-1.gw.opentransit.net (81.52.179.156)
+13  41.61 ms vimpelcom-1.gw.opentransit.net (81.52.179.156)
+14  79.40 ms ccr1-agm.Moscow.gldn.net (79.104.225.167)
+15  89.07 ms unspecified.av.ru (195.19.210.3)
+16  76.68 ms unspecified.av.ru (195.19.210.3)
+17  90.34 ms unspecified.av.ru (195.19.210.43)
+
+Nmap scan report for meet.azbukavkusa.ru (195.19.210.44)
+Host is up (0.083s latency).
+Other addresses for meet.azbukavkusa.ru (not scanned): 195.19.210.43
+rDNS record for 195.19.210.44: unspecified.av.ru
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 8.5
+|_http-title: 403 - Forbidden: Access is denied.
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/8.5
+| http-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-LYNCFRONT02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: gs-lyncfront02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.3.9600
+443/tcp open  ssl/http Microsoft IIS httpd 8.5
+|_ssl-date: 2022-01-30T02:47:33+00:00; 0s from scanner time.
+|_http-server-header: Microsoft-IIS/8.5
+| ssl-cert: Subject: commonName=sip.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:sip.azbukavkusa.ru, DNS:pool01.azbukavkusa.ru, DNS:pool02.azbukavkusa.ru, DNS:wc.azbukavkusa.ru, DNS:meet.azbukavkusa.ru, DNS:join.azbukavkusa.ru, DNS:lyncdiscover.azbukavkusa.ru, DNS:lyncdiscoverinternal.azbukavkusa.ru, DNS:sip.sip.azbukavkusa.ru, DNS:lyncdiscover.sip.azbukavkusa.ru, DNS:lyncdiscoverinternal.sip.azbukavkusa.ru, DNS:www.sip.azbukavkusa.ru
+| Not valid before: 2021-02-12T09:56:02
+|_Not valid after:  2022-03-16T09:56:02
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: 403 - Forbidden: Access is denied.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2012:r2
+Aggressive OS guesses: Microsoft Windows 7 SP1 (92%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (89%), Microsoft Windows Server 2012 R2 (89%), Microsoft Windows Server 2012 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 195.19.210.14
+16  ...
+17  79.17 ms unspecified.av.ru (195.19.210.44)
+
+Nmap scan report for mail-service.azbukavkusa.ru (195.19.210.64)
+Host is up (0.085s latency).
+rDNS record for 195.19.210.64: unspecified.av.ru
+Not shown: 994 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 7.5
+|_http-title: Did not follow redirect to https://owa.azbukavkusa.ru/owa
+|_http-server-header: Microsoft-IIS/7.5
+443/tcp open  ssl/http Microsoft IIS httpd 7.5
+|_ssl-date: 2022-01-30T02:47:33+00:00; +1s from scanner time.
+| http-title: Outlook Web App
+|_Requested resource was https://owa.azbukavkusa.ru/owa/auth/logon.aspx?url=https://owa.azbukavkusa.ru/owa/&reason=0
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+|_http-server-header: Microsoft-IIS/7.5
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+465/tcp open  smtp     Microsoft Exchange smtpd
+| smtp-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+| smtp-commands: mail2.azbukavkusa.ru Hello [79.144.17.123], SIZE 26091520, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, AUTH NTLM LOGIN, 8BITMIME, BINARYMIME, CHUNKING
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+|_ssl-date: 2022-01-30T02:47:34+00:00; +1s from scanner time.
+587/tcp open  smtp     Microsoft Exchange smtpd
+| smtp-commands: GS-MAIL02.gs.local Hello [79.144.17.123], SIZE 26091520, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, AUTH GSSAPI NTLM, 8BITMIME, BINARYMIME, CHUNKING
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+|_ssl-date: 2022-01-30T02:47:33+00:00; 0s from scanner time.
+| smtp-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+| ssl-cert: Subject: commonName=GS-MAIL02
+| Subject Alternative Name: DNS:GS-MAIL02, DNS:GS-MAIL02.gs.local
+| Not valid before: 2020-11-17T11:23:27
+|_Not valid after:  2025-11-17T11:23:27
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+993/tcp open  ssl/imap Microsoft Exchange 2007-2010 imapd
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+|_ssl-date: 2022-01-30T02:47:34+00:00; +1s from scanner time.
+|_imap-capabilities: UIDPLUS IMAP4 LITERAL+A0001 AUTH=NTLM completed IMAP4rev1 CAPABILITY IDLE AUTH=GSSAPI AUTH=PLAIN NAMESPACE CHILDREN OK
+| imap-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+995/tcp open  ssl/pop3 Microsoft Exchange 2007-2010 pop3d
+|_pop3-capabilities: USER SASL(NTLM GSSAPI PLAIN) UIDL TOP
+|_ssl-date: 2022-01-30T02:47:33+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| pop3-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 18 hops
+Service Info: Hosts: mail2.azbukavkusa.ru, GS-MAIL02.gs.local; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+-   Hops 1-15 are the same as for 195.19.210.43
+16  ... 17
+18  111.58 ms unspecified.av.ru (195.19.210.64)
+
+Nmap scan report for autodiscover.azbukavkusa.ru (195.19.210.14)
+Host is up (0.086s latency).
+rDNS record for 195.19.210.14: unspecified.av.ru
+Not shown: 996 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Did not follow redirect to https://owa.azbukavkusa.ru/owa
+443/tcp open  ssl/http Microsoft IIS httpd 7.5
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+|_http-server-header: Microsoft-IIS/7.5
+|_ssl-date: 2022-01-30T02:47:33+00:00; +1s from scanner time.
+| http-title: Outlook Web App
+|_Requested resource was https://owa.azbukavkusa.ru/owa/auth/logon.aspx?url=https://owa.azbukavkusa.ru/owa/&reason=0
+465/tcp open  smtp     Microsoft Exchange smtpd
+|_ssl-date: 2022-01-30T02:47:34+00:00; +1s from scanner time.
+| smtp-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| smtp-commands: mail2.azbukavkusa.ru Hello [79.144.17.123], SIZE 26091520, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, AUTH NTLM LOGIN, 8BITMIME, BINARYMIME, CHUNKING
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+993/tcp open  ssl/imap Microsoft Exchange 2007-2010 imapd
+|_ssl-date: 2022-01-30T02:47:33+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| imap-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+|_imap-capabilities: UIDPLUS IMAP4 LITERAL+A0001 AUTH=NTLM completed IMAP4rev1 CAPABILITY IDLE AUTH=GSSAPI AUTH=PLAIN NAMESPACE CHILDREN OK
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|load balancer|WAP|firewall|proxy server|telecom-misc
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (89%), F5 Networks embedded (87%), Cyberoam embedded (86%), Citrix embedded (86%), Juniper IVE OS 7.X (86%), Avaya Communication Manager (86%), Cymphonix embedded (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.18 cpe:/o:linux:linux_kernel:2.6.22 cpe:/h:juniper:sa4000 cpe:/o:juniper:ive_os:7.0 cpe:/o:linux:linux_kernel:2.6.11 cpe:/a:avaya:communication_manager cpe:/h:cymphonix:ex550 cpe:/o:linux:linux_kernel:2.4.21
+Aggressive OS guesses: Linux 2.6.18 (89%), F5 BIG-IP load balancer (87%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (87%), Linux 2.6.24 (87%), Cyberoam UTM firewall (86%), Citrix Access Gateway VPN gateway (86%), Juniper SA4000 SSL VPN gateway (IVE OS 7.0) (86%), Linux 2.6.11 (86%), Avaya Communication Manager (Linux 2.6.11) (86%), Cymphonix EX550 firewall (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+Service Info: Host: mail2.azbukavkusa.ru; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT       ADDRESS
+-   Hops 1-8 are the same as for 195.19.210.43
+9   22.95 ms  193.251.129.205
+10  35.09 ms  bundle-ether301.pastr4.paris.opentransit.net (193.251.133.250)
+11  52.82 ms  ae315-0.ffttr6.frankfurt.opentransit.net (193.251.240.74)
+12  50.71 ms  ae305-0.ffttr6.frankfurt.opentransit.net (193.251.128.73)
+13  88.58 ms  ccr1-agm.Moscow.gldn.net (79.104.225.167)
+14  94.35 ms  87.229.179.2
+15  100.82 ms 87.229.179.2
+16  ...
+17  89.31 ms  unspecified.av.ru (195.19.210.14)
+
+Nmap scan report for owa.azbukavkusa.ru (195.19.210.14)
+Host is up (0.085s latency).
+rDNS record for 195.19.210.14: unspecified.av.ru
+Not shown: 995 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Did not follow redirect to https://owa.azbukavkusa.ru/owa
+443/tcp open  ssl/http Microsoft IIS httpd 7.5
+|_ssl-date: 2022-01-30T02:49:57+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+|_http-server-header: Microsoft-IIS/7.5
+| http-title: Outlook Web App
+|_Requested resource was https://owa.azbukavkusa.ru/owa/auth/logon.aspx?url=https://owa.azbukavkusa.ru/owa/&reason=0
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+587/tcp open  smtp     Microsoft Exchange smtpd
+|_ssl-date: 2022-01-30T02:49:58+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=GS-MAIL02
+| Subject Alternative Name: DNS:GS-MAIL02, DNS:GS-MAIL02.gs.local
+| Not valid before: 2020-11-17T11:23:27
+|_Not valid after:  2025-11-17T11:23:27
+| smtp-commands: GS-MAIL02.gs.local Hello [79.144.17.123], SIZE 26091520, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, AUTH GSSAPI NTLM, 8BITMIME, BINARYMIME, CHUNKING
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+| smtp-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+993/tcp open  ssl/imap Microsoft Exchange 2007-2010 imapd
+|_ssl-date: 2022-01-30T02:49:57+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+|_imap-capabilities: UIDPLUS IMAP4 LITERAL+A0001 AUTH=NTLM completed IMAP4rev1 CAPABILITY IDLE AUTH=GSSAPI AUTH=PLAIN NAMESPACE CHILDREN OK
+| imap-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+995/tcp open  ssl/pop3 Microsoft Exchange 2007-2010 pop3d
+|_ssl-date: 2022-01-30T02:49:57+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=owa.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:owa.azbukavkusa.ru, DNS:mail1.azbukavkusa.ru, DNS:mail2.azbukavkusa.ru, DNS:mail-service.azbukavkusa.ru, DNS:www.owa.azbukavkusa.ru, DNS:autodiscover.azbukavkusa.ru, DNS:mail.azbukavkusa.ru
+| Not valid before: 2021-06-17T14:51:03
+|_Not valid after:  2022-07-19T14:51:03
+| pop3-ntlm-info: 
+|   Target_Name: GS
+|   NetBIOS_Domain_Name: GS
+|   NetBIOS_Computer_Name: GS-MAIL02
+|   DNS_Domain_Name: gs.local
+|   DNS_Computer_Name: GS-MAIL02.gs.local
+|   DNS_Tree_Name: root.gs
+|_  Product_Version: 6.1.7601
+|_pop3-capabilities: USER SASL(NTLM GSSAPI PLAIN) UIDL TOP
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|firewall|broadband router
+Running (JUST GUESSING): Linux 2.6.X|3.X (89%), IPCop 2.X|1.X (89%), D-Link embedded (86%), IPFire 2.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:ipcop:ipcop:2.0 cpe:/h:dlink:dsl-2890al cpe:/o:linux:linux_kernel:2.6.25.20 cpe:/o:ipcop:ipcop:1.9.19 cpe:/o:ipfire:ipfire:2.9 cpe:/o:linux:linux_kernel:3.2.1
+Aggressive OS guesses: IPCop 2.0 (Linux 2.6.32) (89%), Linux 2.6.32 (89%), D-Link DSL-2890AL ADSL router (86%), OpenWrt Kamikaze 8.09 (Linux 2.6.25.20) (86%), IPCop 1.9.19 or IPFire 2.9 firewall (Linux 2.6.32) (86%), Linux 2.6.36 (86%), Linux 3.2.1 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 18 hops
+Service Info: Host: GS-MAIL02.gs.local; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   2.68 ms   192.168.1.1
+2   ...
+3   7.22 ms   33.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.33)
+4   ...
+5   8.08 ms   69.red-80-58-96.staticip.rima-tde.net (80.58.96.69)
+6   7.42 ms   213.140.51.56
+7   16.93 ms  176.52.248.190
+8   14.70 ms  orange-be1-grtbcnes1.net.telefonicaglobalsolutions.com (213.140.53.73)
+9   22.95 ms  193.251.129.205
+10  35.09 ms  bundle-ether301.pastr4.paris.opentransit.net (193.251.133.250)
+11  52.82 ms  ae315-0.ffttr6.frankfurt.opentransit.net (193.251.240.74)
+12  50.71 ms  ae305-0.ffttr6.frankfurt.opentransit.net (193.251.128.73)
+13  88.58 ms  ccr1-agm.Moscow.gldn.net (79.104.225.167)
+14  94.35 ms  87.229.179.2
+15  100.82 ms 87.229.179.2
+16  ... 17
+18  93.63 ms  unspecified.av.ru (195.19.210.14)
+
+Nmap scan report for join.azbukavkusa.ru (195.19.210.43)
+Host is up (0.087s latency).
+Other addresses for join.azbukavkusa.ru (not scanned): 195.19.210.44
+rDNS record for 195.19.210.43: unspecified.av.ru
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp open  ssl/http Microsoft IIS httpd 8.5
+|_ssl-date: 2022-01-30T02:49:57+00:00; 0s from scanner time.
+|_http-server-header: Microsoft-IIS/8.5
+| ssl-cert: Subject: commonName=sip.azbukavkusa.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:sip.azbukavkusa.ru, DNS:pool01.azbukavkusa.ru, DNS:pool02.azbukavkusa.ru, DNS:wc.azbukavkusa.ru, DNS:meet.azbukavkusa.ru, DNS:join.azbukavkusa.ru, DNS:lyncdiscover.azbukavkusa.ru, DNS:lyncdiscoverinternal.azbukavkusa.ru, DNS:sip.sip.azbukavkusa.ru, DNS:lyncdiscover.sip.azbukavkusa.ru, DNS:lyncdiscoverinternal.sip.azbukavkusa.ru, DNS:www.sip.azbukavkusa.ru
+| Not valid before: 2021-02-12T09:56:02
+|_Not valid after:  2022-03-16T09:56:02
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: 403 - Forbidden: Access is denied.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 7|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2012
+Aggressive OS guesses: Microsoft Windows 7 SP1 (92%), Microsoft Windows Server 2012 (89%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (89%), Microsoft Windows Server 2012 R2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-8 are the same as for 195.19.210.14
+9   19.05 ms 193.251.133.168
+10  46.36 ms 193.251.132.230
+11  52.14 ms 193.251.129.96
+12  46.36 ms vimpelcom-1.gw.opentransit.net (81.52.179.156)
+13  41.61 ms vimpelcom-1.gw.opentransit.net (81.52.179.156)
+14  79.40 ms ccr1-agm.Moscow.gldn.net (79.104.225.167)
+15  89.07 ms unspecified.av.ru (195.19.210.3)
+16  76.68 ms unspecified.av.ru (195.19.210.3)
+17  90.34 ms unspecified.av.ru (195.19.210.43)
+
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     195.19.210.64 (mail-service.azbukavkusa.ru)
+|     195.19.210.44 (meet.azbukavkusa.ru)
+|     195.19.210.43 (pool01.azbukavkusa.ru)
+|     195.19.210.14 (autodiscover.azbukavkusa.ru)
+|     195.19.210.14 (owa.azbukavkusa.ru)
+|_    195.19.210.43 (join.azbukavkusa.ru)
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 29 21:49:59 2022 -- 8 IP addresses (8 hosts up) scanned in 1089.41 seconds

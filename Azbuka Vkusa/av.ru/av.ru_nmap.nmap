@@ -1,0 +1,1708 @@
+# Nmap 7.92 scan initiated Sat Jan 29 17:38:16 2022 as: nmap -sV -sC -A -Pn -O -iL av.ru_list.txt -oA av.ru_nmap
+Nmap scan report for av.ru (93.93.89.20)
+Host is up (0.078s latency).
+Other addresses for av.ru (not scanned): 46.235.184.188 37.220.163.2 212.193.157.110 46.235.189.110 46.235.185.176
+rDNS record for 93.93.89.20: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-8 are the same as for 37.220.161.37
+9   56.75 ms prs-bb2-link.ip.twelve99.net (80.91.248.130)
+10  40.01 ms EDN-SOVINTE.edge8.Frankfurt1.Level3.net (212.162.40.254)
+11  83.43 ms pe02.8marta.Moscow.gldn.net (79.104.225.143)
+12  91.00 ms sw1-msk-sov.ip.ngenix.net (93.93.91.1)
+13  79.32 ms cdn.ngenix.net (93.93.89.20)
+
+Nmap scan report for admin-booking.av.ru (46.235.185.142)
+Host is up (0.079s latency).
+Other addresses for admin-booking.av.ru (not scanned): 37.220.162.101 212.193.152.143 46.235.188.165
+rDNS record for 46.235.185.142: cdn.ngenix.net
+Not shown: 992 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Linux 5.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 212.193.155.90
+14  72.99 ms cdn.ngenix.net (46.235.185.142)
+
+Nmap scan report for invest.av.ru (37.220.162.203)
+Host is up (0.088s latency).
+Other addresses for invest.av.ru (not scanned): 212.193.152.237 46.235.185.86 93.93.88.213
+rDNS record for 37.220.162.203: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 37.220.161.37
+16  86.77 ms cdn.ngenix.net (37.220.162.203)
+
+Nmap scan report for tms.av.ru (46.235.185.7)
+Host is up (0.079s latency).
+Other addresses for tms.av.ru (not scanned): 93.93.89.125 212.193.152.136 212.193.155.90
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 5.0 (88%), Linux 5.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-10 are the same as for 212.193.155.90
+11  73.62 ms 188.254.25.77
+12  ...
+13  81.57 ms sw1-rt1-msk.ip.ngenix.net (46.235.184.1)
+14  77.32 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for images.av.ru (78.41.109.73)
+Host is up (0.039s latency).
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 10 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-7 are the same as for 212.193.155.90
+8   20.12 ms 176.52.248.251
+9   32.99 ms ae3-4.RT.EQX.FKT.DE.retn.net (87.245.232.233)
+10  40.01 ms 78.41.109.73
+
+Nmap scan report for ams.av.ru (212.193.155.129)
+Host is up (0.080s latency).
+Other addresses for ams.av.ru (not scanned): 46.235.184.182 93.93.89.50 212.193.152.100
+rDNS record for 212.193.155.129: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), Linux 3.2 (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Sony X75CH-series Android TV (Android 5.0) (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 212.193.155.90
+13  78.00 ms cdn.ngenix.net (212.193.155.129)
+
+Nmap scan report for soap-siebel.av.ru (212.193.155.90)
+Host is up (0.079s latency).
+Other addresses for soap-siebel.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.152.136
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Device type: general purpose|specialized|storage-misc|WAP|printer
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X|5.X (90%), Crestron 2-Series (89%), HP embedded (89%), Ubiquiti embedded (88%), Asus embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3.10 cpe:/o:linux:linux_kernel:4 cpe:/o:crestron:2_series cpe:/h:hp:p2000_g3 cpe:/o:linux:linux_kernel:2.6.32 cpe:/h:ubnt:airmax_nanostation cpe:/o:linux:linux_kernel:5.0 cpe:/h:asus:rt-n56u
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   2.89 ms  192.168.1.1
+2   ...
+3   5.30 ms  33.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.33)
+4   ...
+5   7.51 ms  69.red-80-58-96.staticip.rima-tde.net (80.58.96.69)
+6   7.66 ms  213.140.51.56
+7   7.95 ms  176.52.248.172
+8   7.83 ms  176.52.248.178
+9   10.08 ms 176.52.248.247
+10  8.54 ms  94.142.107.57
+11  79.57 ms 188.254.25.75
+12  41.04 ms ae10-xcr3.prp.cw.net (195.2.24.189)
+13  29.06 ms ae1-pcr1.ptl.cw.net (195.2.9.73)
+14  73.96 ms 212.193.155.90
+
+Nmap scan report for drive.av.ru (142.250.184.179)
+Host is up (0.010s latency).
+Other addresses for drive.av.ru (not scanned): 2a00:1450:4003:80e::2013
+rDNS record for 142.250.184.179: mad07s23-in-f19.1e100.net
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http       Google httpd
+|_http-server-header: ghs
+|_http-title: Did not follow redirect to https://drive.google.com/a/av.ru
+443/tcp open  ssl/https?
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|bridge
+Running (JUST GUESSING): OpenBSD 4.X (91%), Digi embedded (85%), FreeBSD 9.X (85%)
+OS CPE: cpe:/o:openbsd:openbsd:4.3 cpe:/o:freebsd:freebsd:9.1
+Aggressive OS guesses: OpenBSD 4.3 (91%), Digi PortServer TS serial-to-Ethernet bridge (85%), FreeBSD 9.1-PRERELEASE (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 10 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+-   Hops 1-3 are the same as for 212.193.155.90
+4   6.89 ms 150.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.150)
+5   ...
+6   7.82 ms 176.52.253.97
+7   7.94 ms 72.14.219.20
+8   7.62 ms 172.253.50.53
+9   6.43 ms 142.250.213.127
+10  9.60 ms mad07s23-in-f19.1e100.net (142.250.184.179)
+
+Nmap scan report for express.av.ru (37.220.162.212)
+Host is up (0.089s latency).
+Other addresses for express.av.ru (not scanned): 93.93.88.66 212.193.152.142 212.193.155.151 46.235.185.1
+rDNS record for 37.220.162.212: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (90%), Linux 3.10 (89%), Linux 3.10 - 4.11 (89%), Linux 3.11 - 3.12 (89%), Crestron XPanel control system (88%), Linux 3.2 (88%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), HP P2000 G3 NAS device (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (87%), Linux 2.6.32 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-11 are the same as for 37.220.161.37
+12  88.07 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+13  95.62 ms ss-cr04-be2.77.msk.mts-internet.net (195.34.50.150)
+14  85.00 ms mar-cr02-be8.153.msk.mts-internet.net (195.34.59.141)
+15  87.32 ms 212.188.23.106
+16  86.60 ms cdn.ngenix.net (37.220.162.212)
+
+Nmap scan report for lp.av.ru (185.165.123.36)
+Host is up (0.042s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     nginx
+|_http-title: Did not follow redirect to https://lp.av.ru/
+443/tcp open  ssl/http nginx
+| ssl-cert: Subject: commonName=lp.av.ru
+| Subject Alternative Name: DNS:lp.av.ru, DNS:www.lp.av.ru
+| Not valid before: 2022-01-19T04:50:44
+|_Not valid after:  2022-04-19T04:50:43
+|_http-title: Did not follow redirect to https://lp.av.ru/
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: Variti/0.9.3a
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|firewall
+Running (JUST GUESSING): Linux 3.X|2.6.X (92%), ZyXEL ZyNOS 3.X (92%), OpenBSD 4.X|6.X (90%), FreeBSD 6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3.18 cpe:/o:zyxel:zynos:3.65 cpe:/o:openbsd:openbsd:4.8 cpe:/o:openbsd:openbsd:6.1 cpe:/o:linux:linux_kernel:2.6.29 cpe:/o:freebsd:freebsd:6.1
+Aggressive OS guesses: Linux 3.18 (92%), ZyXEL ZyWALL 70 firewall (ZyNOS 3.65) (92%), OpenBSD 4.8 (90%), OpenBSD 6.1 (89%), Linux 2.6.29 (87%), FreeBSD 6.1-RELEASE (87%), Linux 2.6.32 (85%), OpenBSD 4.0 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 12 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-9 are the same as for 93.93.89.20
+10  37.68 ms ffm-bb2-link.ip.twelve99.net (62.115.114.99)
+11  44.76 ms ffm-b7-link.ip.twelve99.net (62.115.143.99)
+12  35.10 ms 185.165.123.36
+
+Nmap scan report for ums.av.ru (93.93.89.125)
+Host is up (0.079s latency).
+Other addresses for ums.av.ru (not scanned): 212.193.152.136 212.193.155.90 46.235.185.7
+rDNS record for 93.93.89.125: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Linux 5.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-10 are the same as for 93.93.89.20
+11  72.96 ms pe02.8marta.Moscow.gldn.net (79.104.225.141)
+12  57.86 ms s-b5-link.ip.twelve99.net (62.115.119.109)
+13  86.88 ms cdn.ngenix.net (93.93.89.125)
+
+Nmap scan report for b2b.av.ru (212.193.152.136)
+Host is up (0.087s latency).
+Other addresses for b2b.av.ru (not scanned): 212.193.155.90 46.235.185.7 93.93.89.125
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 37.220.161.37
+14  89.70 ms sw1-m9p1-msk.ip.ngenix.net (212.193.152.1)
+15  88.78 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for dpdd-zabbix.av.ru (185.18.52.208)
+Host is up (0.050s latency).
+rDNS record for 185.18.52.208: kvmnl01-19956-1.fornex.org
+Not shown: 972 closed tcp ports (reset)
+PORT      STATE    SERVICE        VERSION
+22/tcp    open     ssh            OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 19:98:b3:8f:1d:f0:0a:46:9a:0b:78:b0:95:1f:e3:9a (RSA)
+|   256 83:ac:04:fb:5e:09:83:5e:d8:23:d9:ea:19:90:83:87 (ECDSA)
+|_  256 95:ef:b5:5f:65:3a:a4:50:30:67:42:3b:11:ae:0b:a9 (ED25519)
+80/tcp    open     http           nginx 1.16.1
+|_http-title: Did not follow redirect to https://dpdd-zabbix.av.ru/
+|_http-server-header: nginx/1.16.1
+99/tcp    filtered metagram
+125/tcp   filtered locus-map
+443/tcp   open     ssl/http       nginx 1.16.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.16.1
+|_http-title: kvmnl01-19956.fornex.org: Zabbix
+|_ssl-date: TLS randomness does not represent time
+| http-robots.txt: 2 disallowed entries 
+|_/ /zabbix/".
+1084/tcp  filtered ansoft-lm-2
+1102/tcp  filtered adobeserver-1
+1107/tcp  filtered isoipsigport-2
+1149/tcp  filtered bvtsonar
+1600/tcp  filtered issd
+1914/tcp  filtered elm-momentum
+2041/tcp  filtered interbase
+3000/tcp  open     ssl/ppp?
+| tls-nextprotoneg: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=zabbix.dpdd.pro
+| Subject Alternative Name: DNS:zabbix.dpdd.pro
+| Not valid before: 2020-04-23T02:51:11
+|_Not valid after:  2020-07-22T02:51:11
+| tls-alpn: 
+|_  http/1.1
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Content-Type: text/html; charset=utf-8
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2F; Path=/; HttpOnly; SameSite=Lax
+|     X-Frame-Options: deny
+|     Date: Sat, 29 Jan 2022 22:53:43 GMT
+|     Content-Length: 29
+|     href="/login">Found</a>.
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Cache-Control: no-cache
+|     Content-Type: text/html; charset=UTF-8
+|     Expires: -1
+|     Pragma: no-cache
+|     X-Frame-Options: deny
+|     Date: Sat, 29 Jan 2022 22:53:43 GMT
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <script>
+|     !(function() {
+|     ('PerformanceLongTaskTiming' in window) {
+|     (window.__tti = { e: [] });
+|     PerformanceObserver(function(l) {
+|     g.e.concat(l.getEntries());
+|     g.o.observe({ entryTypes: ['longtask'] });
+|     })();
+|     </script>
+|     <meta charset="utf-8" />
+|     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+|     <meta name="viewport" content="width=device-width" />
+|     <meta name="theme-color" content="#000" />
+|     <title>Grafana</title>
+|     <base href="/" />
+|     <link
+|     rel="preload"
+|_    href="public/fonts/roboto/RxZJdnzeo3R5zSe
+|_ssl-date: TLS randomness does not represent time
+5061/tcp  filtered sip-tls
+5414/tcp  filtered statusd
+5432/tcp  open     postgresql     PostgreSQL DB 10.0 - 10.1 or 10.8 - 10.12
+5925/tcp  filtered unknown
+8001/tcp  filtered vcom-tunnel
+8009/tcp  filtered ajp13
+9102/tcp  open     jetdirect?
+9998/tcp  filtered distinct32
+10025/tcp filtered unknown
+24800/tcp filtered unknown
+28201/tcp filtered unknown
+32770/tcp filtered sometimes-rpc3
+32772/tcp filtered sometimes-rpc7
+33354/tcp filtered unknown
+55055/tcp filtered unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.92%T=SSL%I=7%D=1/29%Time=61F5C4DA%P=x86_64-pc-linux-gn
+SF:u%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x2
+SF:0Bad\x20Request")%r(GetRequest,132,"HTTP/1\.0\x20302\x20Found\r\nCache-
+SF:Control:\x20no-cache\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\
+SF:nExpires:\x20-1\r\nLocation:\x20/login\r\nPragma:\x20no-cache\r\nSet-Co
+SF:okie:\x20redirect_to=%2F;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nX-
+SF:Frame-Options:\x20deny\r\nDate:\x20Sat,\x2029\x20Jan\x202022\x2022:53:4
+SF:3\x20GMT\r\nContent-Length:\x2029\r\n\r\n<a\x20href=\"/login\">Found</a
+SF:>\.\n\n")%r(HTTPOptions,2288,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCache
+SF:-Control:\x20no-cache\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r
+SF:\nExpires:\x20-1\r\nPragma:\x20no-cache\r\nX-Frame-Options:\x20deny\r\n
+SF:Date:\x20Sat,\x2029\x20Jan\x202022\x2022:53:43\x20GMT\r\n\r\n<!DOCTYPE\
+SF:x20html>\n<html\x20lang=\"en\">\n\x20\x20<head>\n\x20\x20\x20\x20<scrip
+SF:t>\n\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20!\(function\(\)\x
+SF:20{\n\x20\x20\x20\x20\x20\x20\x20\x20if\x20\('PerformanceLongTaskTiming
+SF:'\x20in\x20window\)\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20var\x
+SF:20g\x20=\x20\(window\.__tti\x20=\x20{\x20e:\x20\[\]\x20}\);\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20g\.o\x20=\x20new\x20PerformanceObserver\(
+SF:function\(l\)\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20g\.
+SF:e\x20=\x20g\.e\.concat\(l\.getEntries\(\)\);\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20}\);\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20g\.o\.obse
+SF:rve\({\x20entryTypes:\x20\['longtask'\]\x20}\);\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20}\n\x20\x20\x20\x20\x20\x20}\)\(\);\n\n\x20\x20\x20\x20</scri
+SF:pt>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\"\x20/>\n\x20\x20\x20\x20
+SF:<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome=1\"
+SF:\x20/>\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=d
+SF:evice-width\"\x20/>\n\x20\x20\x20\x20<meta\x20name=\"theme-color\"\x20c
+SF:ontent=\"#000\"\x20/>\n\n\x20\x20\x20\x20<title>Grafana</title>\n\n\x20
+SF:\x20\x20\x20<base\x20href=\"/\"\x20/>\n\n\x20\x20\x20\x20<link\n\x20\x2
+SF:0\x20\x20\x20\x20rel=\"preload\"\n\x20\x20\x20\x20\x20\x20href=\"public
+SF:/fonts/roboto/RxZJdnzeo3R5zSe");
+Aggressive OS guesses: Linux 3.13 or 4.2 (96%), Linux 3.10 - 4.11 (95%), Linux 5.1 (95%), HP P2000 G3 NAS device (93%), OpenWrt 12.09-rc1 Attitude Adjustment (Linux 3.3 - 3.7) (93%), Linux 3.18 (93%), Linux 3.2 - 4.9 (93%), Linux 3.13 (92%), Linux 3.16 - 4.6 (92%), Linux 4.10 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-5 are the same as for 212.193.155.90
+6   7.21 ms  ae-0-400-grtmadde3.net.telefonicaglobalsolutions.com (213.140.51.58)
+7   8.42 ms  5.53.6.64
+8   7.55 ms  94.142.107.35
+9   31.27 ms 81.52.166.152
+10  30.17 ms bundle-ether303.pastr4.paris.opentransit.net (193.251.131.9)
+11  7.54 ms  bundle-ether311.madtr6.madrid.opentransit.net (193.251.128.31)
+12  ...
+13  31.10 ms bundle-ether303.pastr4.paris.opentransit.net (193.251.131.9)
+14  47.03 ms 109.236.95.185
+15  48.57 ms kvmnl01-19956-1.fornex.org (185.18.52.208)
+
+Nmap scan report for portal.av.ru (46.235.185.93)
+Host is up (0.078s latency).
+Other addresses for portal.av.ru (not scanned): 212.193.155.137 212.193.152.87 93.93.88.233
+rDNS record for 46.235.185.93: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 212.193.155.90
+14  77.25 ms cdn.ngenix.net (46.235.185.93)
+
+Nmap scan report for backend.vkusomania.av.ru (212.193.157.61)
+Host is up (0.080s latency).
+Other addresses for backend.vkusomania.av.ru (not scanned): 46.235.188.214 46.235.188.138 46.235.184.246 37.220.163.110 93.93.89.54 212.193.152.249
+rDNS record for 212.193.157.61: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-15T15:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-9 are the same as for 212.193.155.90
+10  33.15 ms 195.122.183.218
+11  32.30 ms ae11-xcr1.mal.cw.net (195.2.8.154)
+12  81.76 ms sw1-std2-msk.ip.ngenix.net (212.193.156.1)
+13  69.70 ms cdn.ngenix.net (212.193.157.61)
+
+Nmap scan report for lms.av.ru (212.193.155.149)
+Host is up (0.080s latency).
+Other addresses for lms.av.ru (not scanned): 93.93.89.38 46.235.188.240 212.193.152.181 46.235.185.8
+rDNS record for 212.193.155.149: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 212.193.155.90
+14  87.30 ms cdn.ngenix.net (212.193.155.149)
+
+Nmap scan report for pa.av.ru (212.193.152.91)
+Host is up (0.087s latency).
+Other addresses for pa.av.ru (not scanned): 37.220.162.144 212.193.155.178 46.235.185.40
+rDNS record for 212.193.152.91: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (90%), Linux 3.10 (89%), Linux 3.10 - 4.11 (89%), Linux 3.11 - 3.12 (89%), Linux 3.2 (89%), Crestron XPanel control system (88%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), HP P2000 G3 NAS device (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (87%), Linux 2.6.32 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 37.220.161.37
+14  87.01 ms m9-cr04-be8.77.msk.mts-internet.net (212.188.54.213)
+15  89.06 ms sw1-m9p1-msk.ip.ngenix.net (212.193.152.1)
+16  82.26 ms cdn.ngenix.net (212.193.152.91)
+
+Nmap scan report for 365.av.ru (46.235.185.130)
+Host is up (0.083s latency).
+Other addresses for 365.av.ru (not scanned): 93.93.89.64 212.193.153.184 212.193.155.159
+rDNS record for 46.235.185.130: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-13 are the same as for 212.193.155.90
+14  47.06 ms ae1-pcr1.fnt.cw.net (195.2.9.125)
+15  32.80 ms 217.161.68.34
+16  79.22 ms 87.226.183.91
+17  81.08 ms cdn.ngenix.net (46.235.185.130)
+
+Nmap scan report for pay.av.ru (46.235.184.61)
+Host is up (0.081s latency).
+Other addresses for pay.av.ru (not scanned): 212.193.152.59 46.235.189.162 93.93.88.28 37.220.161.37 212.193.157.78
+rDNS record for 46.235.184.61: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (89%), Sony X75CH-series Android TV (Android 5.0) (89%), Linux 3.11 - 3.12 (89%), HP P2000 G3 NAS device (89%), Linux 3.2 (88%), Linux 5.4 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 212.193.155.90
+13  81.46 ms cdn.ngenix.net (46.235.184.61)
+
+Nmap scan report for catering.av.ru (93.93.88.181)
+Host is up (0.082s latency).
+Other addresses for catering.av.ru (not scanned): 212.193.152.85 46.235.185.182 37.220.162.36
+rDNS record for 93.93.88.181: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-9 are the same as for 93.93.89.20
+10  61.64 ms ffm-bb1-link.ip.twelve99.net (62.115.123.12)
+11  60.00 ms s-bb2-link.ip.twelve99.net (62.115.138.104)
+12  58.81 ms s-b5-link.ip.twelve99.net (62.115.141.199)
+13  67.27 ms vimpelcom-svc072000-ic358960.ip.twelve99-cust.net (62.115.44.73)
+14  72.79 ms pe02.8marta.Moscow.gldn.net (79.104.225.141)
+15  74.60 ms cdn.ngenix.net (93.93.88.181)
+
+Nmap scan report for push.av.ru (54.220.46.255)
+Host is up (0.045s latency).
+Other addresses for push.av.ru (not scanned): 34.253.97.242
+rDNS record for 54.220.46.255: ec2-54-220-46-255.eu-west-1.compute.amazonaws.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     OpenResty web app server
+|_http-server-header: openresty
+|_http-title: 308 Permanent Redirect
+443/tcp open  ssl/http OpenResty web app server
+| ssl-cert: Subject: commonName=push.av.ru
+| Subject Alternative Name: DNS:push.av.ru
+| Not valid before: 2021-12-03T12:03:27
+|_Not valid after:  2022-03-03T12:03:26
+| tls-nextprotoneg: 
+|_  http/1.1
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Site doesn't have a title.
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: openresty
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X (88%)
+OS CPE: cpe:/o:linux:linux_kernel:3
+Aggressive OS guesses: Linux 3.10 - 3.13 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 23 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 212.193.155.90
+2   ...
+3   6.41 ms  29.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.29)
+4   ... 5
+6   11.74 ms ae1-400-grtmadte1.net.telefonicaglobalsolutions.com (216.184.113.186)
+7   7.31 ms  81.173.107.106
+8   24.32 ms 150.222.10.17
+9   9.61 ms  52.93.93.147
+10  ... 22
+23  44.19 ms ec2-54-220-46-255.eu-west-1.compute.amazonaws.com (54.220.46.255)
+
+Nmap scan report for uat-pay.av.ru (37.220.161.37)
+Host is up (0.090s latency).
+Other addresses for uat-pay.av.ru (not scanned): 212.193.152.59 212.193.157.78 93.93.88.28 46.235.189.162 46.235.184.61
+rDNS record for 37.220.161.37: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: HP P2000 G3 NAS device (91%), Linux 2.6.32 (89%), Linux 2.6.32 - 3.1 (89%), Linux 5.0 (89%), Linux 5.0 - 5.4 (89%), Linux 5.1 (89%), Ubiquiti AirOS 5.5.9 (89%), Ubiquiti Pico Station WAP (AirOS 5.2.6) (89%), Linux 2.6.32 - 3.13 (89%), Linux 3.0 - 3.2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-5 are the same as for 212.193.155.90
+6   ...
+7   13.49 ms ae1-400-grtmadte1.net.telefonicaglobalsolutions.com (216.184.113.186)
+8   7.89 ms  ae-5.edge1.Madrid2.Level3.net (4.68.39.33)
+9   63.03 ms ae-2-3204.edge4.Stockholm2.Level3.net (4.69.135.162)
+10  65.62 ms ae-2-3204.edge4.Stockholm2.Level3.net (4.69.135.162)
+11  77.33 ms oct-cr01-be8.78.spb.mts-internet.net (212.188.54.1)
+12  78.89 ms oct-cr01-be8.78.spb.mts-internet.net (212.188.54.1)
+13  88.31 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+14  93.52 ms ss-cr04-be2.77.msk.mts-internet.net (195.34.50.150)
+15  87.68 ms mar-cr02-be8.153.msk.mts-internet.net (195.34.59.141)
+16  88.10 ms 212.188.23.106
+17  88.48 ms cdn.ngenix.net (37.220.161.37)
+
+Nmap scan report for sentry.av.ru (46.235.185.7)
+Host is up (0.080s latency).
+Other addresses for sentry.av.ru (not scanned): 93.93.89.125 212.193.152.136 212.193.155.90
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 46.235.185.130
+16  73.56 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for ass.av.ru (212.193.155.90)
+Host is up (0.078s latency).
+Other addresses for ass.av.ru (not scanned): 212.193.152.136 93.93.89.125 46.235.185.7
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Linux 5.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-14 are the same as for 46.235.185.130
+15  82.70 ms 212.193.155.90
+
+Nmap scan report for oms-dev.av.ru (212.193.152.136)
+Host is up (0.087s latency).
+Other addresses for oms-dev.av.ru (not scanned): 212.193.155.90 46.235.185.7 93.93.89.125
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 - 4.11 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (89%), Sony X75CH-series Android TV (Android 5.0) (89%), Linux 3.10 (89%), Linux 3.11 - 3.12 (89%), HP P2000 G3 NAS device (89%), Linux 3.2 (88%), Linux 5.4 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-14 are the same as for 212.193.152.91
+15  88.78 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for booking.av.ru (46.235.185.142)
+Host is up (0.079s latency).
+Other addresses for booking.av.ru (not scanned): 37.220.162.101 212.193.152.143 46.235.188.165
+rDNS record for 46.235.185.142: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 5.0 (88%), Linux 5.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 46.235.185.130
+16  73.00 ms cdn.ngenix.net (46.235.185.142)
+
+Nmap scan report for zabbix.av.ru (93.93.89.125)
+Host is up (0.077s latency).
+Other addresses for zabbix.av.ru (not scanned): 212.193.152.136 212.193.155.90 46.235.185.7
+rDNS record for 93.93.89.125: cdn.ngenix.net
+Not shown: 992 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Linux 5.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 13 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 93.93.89.20
+13  86.88 ms cdn.ngenix.net (93.93.89.125)
+
+Nmap scan report for dev-unsubscribe.av.ru (46.235.185.7)
+Host is up (0.084s latency).
+Other addresses for dev-unsubscribe.av.ru (not scanned): 93.93.89.125 212.193.152.136 212.193.155.90
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Crestron XPanel control system (89%), Linux 3.10 (89%), Linux 3.2 (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-5 are the same as for 212.193.152.91
+6   7.66 ms  213.140.51.56
+7   7.95 ms  176.52.248.172
+8   7.83 ms  176.52.248.178
+9   10.08 ms 176.52.248.247
+10  8.54 ms  94.142.107.57
+11  73.62 ms 188.254.25.77
+12  41.04 ms ae10-xcr3.prp.cw.net (195.2.24.189)
+13  81.57 ms sw1-rt1-msk.ip.ngenix.net (46.235.184.1)
+14  77.32 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for stand.av.ru (212.193.155.90)
+Host is up (0.083s latency).
+Other addresses for stand.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.152.136
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), Linux 2.6.32 (88%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 46.235.185.7
+13  29.06 ms ae1-pcr1.ptl.cw.net (195.2.9.73)
+14  73.96 ms 212.193.155.90
+
+Nmap scan report for tips.av.ru (212.193.152.136)
+Host is up (0.089s latency).
+Other addresses for tips.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.155.90
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 212.193.152.91
+16  82.79 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for edm-soap.av.ru (212.193.155.90)
+Host is up (0.080s latency).
+Other addresses for edm-soap.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.152.136
+Not shown: 993 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 46.235.185.7
+13  29.06 ms ae1-pcr1.ptl.cw.net (195.2.9.73)
+14  47.06 ms ae1-pcr1.fnt.cw.net (195.2.9.125)
+15  82.70 ms 212.193.155.90
+
+Nmap scan report for competition.av.ru (46.235.185.7)
+Host is up (0.080s latency).
+Other addresses for competition.av.ru (not scanned): 93.93.89.125 212.193.152.136 212.193.155.90
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-5 are the same as for 212.193.152.91
+6   7.66 ms  213.140.51.56
+7   7.95 ms  176.52.248.172
+8   7.83 ms  176.52.248.178
+9   10.08 ms 176.52.248.247
+10  8.54 ms  94.142.107.57
+11  73.62 ms 188.254.25.77
+12  41.04 ms ae10-xcr3.prp.cw.net (195.2.24.189)
+13  81.57 ms sw1-rt1-msk.ip.ngenix.net (46.235.184.1)
+14  77.32 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for blog.av.ru (212.193.152.136)
+Host is up (0.087s latency).
+Other addresses for blog.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.155.90
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-10 are the same as for 212.193.152.91
+11  77.33 ms oct-cr01-be8.78.spb.mts-internet.net (212.188.54.1)
+12  88.07 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+13  88.31 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+14  89.70 ms sw1-m9p1-msk.ip.ngenix.net (212.193.152.1)
+15  88.78 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for b2c.av.ru (46.235.185.7)
+Host is up (0.081s latency).
+Other addresses for b2c.av.ru (not scanned): 212.193.155.90 212.193.152.136 93.93.89.125
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), Linux 3.2 (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Sony X75CH-series Android TV (Android 5.0) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   2.89 ms  192.168.1.1
+2   ...
+3   5.30 ms  33.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.33)
+4   ...
+5   7.51 ms  69.red-80-58-96.staticip.rima-tde.net (80.58.96.69)
+6   7.66 ms  213.140.51.56
+7   7.95 ms  176.52.248.172
+8   7.83 ms  176.52.248.178
+9   10.08 ms 176.52.248.247
+10  8.54 ms  94.142.107.57
+11  73.62 ms 188.254.25.77
+12  41.04 ms ae10-xcr3.prp.cw.net (195.2.24.189)
+13  29.06 ms ae1-pcr1.ptl.cw.net (195.2.9.73)
+14  47.06 ms ae1-pcr1.fnt.cw.net (195.2.9.125)
+15  32.80 ms 217.161.68.34
+16  73.56 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for educenter.av.ru (212.193.155.90)
+Host is up (0.078s latency).
+Other addresses for educenter.av.ru (not scanned): 212.193.152.136 46.235.185.7 93.93.89.125
+Not shown: 992 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 46.235.185.7
+16  83.49 ms 188.128.126.247
+17  70.87 ms 212.193.155.90
+
+Nmap scan report for employee-rest.av.ru (212.193.152.136)
+Host is up (0.087s latency).
+Other addresses for employee-rest.av.ru (not scanned): 212.193.155.90 93.93.89.125 46.235.185.7
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+Aggressive OS guesses: Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.8 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 212.193.152.91
+13  88.31 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+14  89.70 ms sw1-m9p1-msk.ip.ngenix.net (212.193.152.1)
+15  88.78 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for oms.av.ru (212.193.155.90)
+Host is up (0.088s latency).
+Other addresses for oms.av.ru (not scanned): 46.235.185.7 93.93.89.125 212.193.152.136
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Linux 2.6.32 (88%), Linux 2.6.32 - 3.1 (88%), Linux 5.0 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 15 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-5 are the same as for 212.193.152.136
+6   7.66 ms  213.140.51.56
+7   7.95 ms  176.52.248.172
+8   7.83 ms  176.52.248.178
+9   10.08 ms 176.52.248.247
+10  8.54 ms  94.142.107.57
+11  73.62 ms 188.254.25.77
+12  41.04 ms ae10-xcr3.prp.cw.net (195.2.24.189)
+13  29.06 ms ae1-pcr1.ptl.cw.net (195.2.9.73)
+14  47.06 ms ae1-pcr1.fnt.cw.net (195.2.9.125)
+15  82.70 ms 212.193.155.90
+
+Nmap scan report for feedback.av.ru (46.235.185.7)
+Host is up (0.084s latency).
+Other addresses for feedback.av.ru (not scanned): 93.93.89.125 212.193.152.136 212.193.155.90
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+4242/tcp closed vrml-multi-use
+4279/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 (90%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-12 are the same as for 212.193.155.90
+13  81.57 ms sw1-rt1-msk.ip.ngenix.net (46.235.184.1)
+14  77.32 ms cdn.ngenix.net (46.235.185.7)
+
+Nmap scan report for unsubscribe.av.ru (212.193.152.136)
+Host is up (0.090s latency).
+Other addresses for unsubscribe.av.ru (not scanned): 212.193.155.90 46.235.185.7 93.93.89.125
+rDNS record for 212.193.152.136: cdn.ngenix.net
+Not shown: 992 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   closed domain
+80/tcp   open   http           nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http       nginx
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4242/tcp closed vrml-multi-use
+7200/tcp closed fodms
+7201/tcp closed dlip
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), Linux 2.6.32 (88%), Infomir MAG-250 set-top box (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+1   2.89 ms  192.168.1.1
+2   ...
+3   5.30 ms  33.red-81-46-66.customer.static.ccgg.telefonica.net (81.46.66.33)
+4   ...
+5   7.51 ms  69.red-80-58-96.staticip.rima-tde.net (80.58.96.69)
+6   ...
+7   13.49 ms ae1-400-grtmadte1.net.telefonicaglobalsolutions.com (216.184.113.186)
+8   7.89 ms  ae-5.edge1.Madrid2.Level3.net (4.68.39.33)
+9   63.03 ms ae-2-3204.edge4.Stockholm2.Level3.net (4.69.135.162)
+10  65.62 ms ae-2-3204.edge4.Stockholm2.Level3.net (4.69.135.162)
+11  77.33 ms oct-cr01-be8.78.spb.mts-internet.net (212.188.54.1)
+12  78.89 ms oct-cr01-be8.78.spb.mts-internet.net (212.188.54.1)
+13  88.31 ms mag9-cr02-be1.78.msk.mts-internet.net (212.188.2.38)
+14  87.01 ms m9-cr04-be8.77.msk.mts-internet.net (212.188.54.213)
+15  89.06 ms sw1-m9p1-msk.ip.ngenix.net (212.193.152.1)
+16  82.79 ms cdn.ngenix.net (212.193.152.136)
+
+Nmap scan report for oauth.av.ru (46.235.185.7)
+Host is up (0.078s latency).
+Other addresses for oauth.av.ru (not scanned): 212.193.152.136 212.193.155.90 93.93.89.125
+rDNS record for 46.235.185.7: cdn.ngenix.net
+Not shown: 993 filtered tcp ports (no-response)
+PORT     STATE  SERVICE  VERSION
+53/tcp   closed domain
+80/tcp   open   http     nginx
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+443/tcp  open   ssl/http nginx
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=*.av.ru/organizationName=OOO Gorodskoy supermarket/stateOrProvinceName=Moscow/countryName=RU
+| Subject Alternative Name: DNS:*.av.ru, DNS:www.av.ru, DNS:*.vkusomania.av.ru, DNS:av.market, DNS:azbukavkusa.ru, DNS:jobazbuka.ru, DNS:ourfarms.ru, DNS:vkusomania.ru, DNS:wine-academy.ru, DNS:wineacademy.ru, DNS:www.av.market, DNS:www.azbukavkusa.ru, DNS:www.jobazbuka.ru, DNS:www.ourfarms.ru, DNS:www.vkusomania.ru, DNS:www.wine-academy.ru, DNS:www.wineacademy.ru, DNS:av.ru
+| Not valid before: 2020-04-20T14:22:02
+|_Not valid after:  2022-04-16T12:14:35
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| tls-alpn: 
+|   h2
+|_  http/1.1
+554/tcp  closed rtsp
+1935/tcp closed rtmp
+4224/tcp closed xtell
+7200/tcp closed fodms
+Aggressive OS guesses: Linux 3.8 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 3.12 (90%), Linux 3.2 (90%), Linux 3.10 (89%), Crestron XPanel control system (89%), HP P2000 G3 NAS device (89%), Apple macOS 10.13 (High Sierra) (Darwin 17.0.0) (88%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (88%), Linux 2.6.32 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 17 hops
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-15 are the same as for 212.193.155.90
+16  84.19 ms 188.254.25.77
+17  79.90 ms cdn.ngenix.net (46.235.185.7)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 29 18:03:18 2022 -- 40 IP addresses (40 hosts up) scanned in 1503.42 seconds
